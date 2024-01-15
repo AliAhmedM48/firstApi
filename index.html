@@ -12,7 +12,7 @@
     <script>
         fetch('http://localhost:5000/people').then((data) => {
             return data.json();
-             document.body.innerHTML += "Qty : "+ data.length + "<br><br><br>";
+             document.body.innerHTML += "Qty : "+ data.length + " users <br><br><br>";
         }).then((data) => {
             data.forEach(element => {
 
